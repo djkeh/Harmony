@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Harmony</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_about">개발자 정보</string>
+    <string name="action_donate">기부</string>
+    <string name="title_activity_preset_detail">PresetDetailActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_donate">DonateActivity</string>
+    <string name="preSet"><u>프리셋</u></string>
+    <string name="check"><u>확인</u></string>
+    <string name="delete"><u>삭제</u></string>
+
+</resources>

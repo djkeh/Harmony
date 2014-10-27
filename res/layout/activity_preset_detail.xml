@@ -1,0 +1,232 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffb64d"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="세부설정"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="105dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/option1_title"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="#ffa03b"
+            android:gravity="center_vertical"
+            android:paddingLeft="12.5dp"
+            android:text="측정 주기"
+            android:textColor="#fff"
+            android:textSize="11.5sp" />
+
+        <SeekBar
+            android:id="@+id/option1_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/option1_title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:progressDrawable="@drawable/seekbar_drawable"
+            android:thumb="@drawable/thumb_circle" />
+
+        <TextView
+            android:id="@+id/option1_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/option1_seekbar"
+            android:layout_below="@id/option1_seekbar"
+            android:text="짧게"
+            android:textColor="#bfbfbf" />
+
+        <TextView
+            android:id="@+id/option1_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/option1_seekbar"
+            android:layout_below="@id/option1_seekbar"
+            android:text="길게"
+            android:textColor="#bfbfbf" />
+
+        <TextView
+            android:id="@+id/option1_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/option1_seekbar"
+            android:layout_alignRight="@id/option1_seekbar"
+            android:background="#ffa03b"
+            android:gravity="center_vertical"
+            android:text="(측정값)"
+            android:textColor="#fff"
+            android:textSize="11.5sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="105dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/option2_title"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="#ffa03b"
+            android:gravity="center_vertical"
+            android:paddingLeft="12.5dp"
+            android:text="민감도"
+            android:textColor="#fff"
+            android:textSize="11.5sp" />
+
+        <SeekBar
+            android:id="@+id/option2_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/option2_title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:progressDrawable="@drawable/seekbar_drawable"
+            android:thumb="@drawable/thumb_circle" />
+
+        <TextView
+            android:id="@+id/option2_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/option2_seekbar"
+            android:layout_below="@id/option2_seekbar"
+            android:text="민감하게"
+            android:textColor="#bfbfbf" />
+
+        <TextView
+            android:id="@+id/option2_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/option2_seekbar"
+            android:layout_below="@id/option2_seekbar"
+            android:text="둔하게"
+            android:textColor="#bfbfbf" />
+
+        <TextView
+            android:id="@+id/option2_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/option2_seekbar"
+            android:layout_alignRight="@id/option2_seekbar"
+            android:background="#ffa03b"
+            android:gravity="center_vertical"
+            android:text="(측정값)"
+            android:textColor="#fff"
+            android:textSize="11.5sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="105dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/option3_title"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="#ffa03b"
+            android:gravity="center_vertical"
+            android:paddingLeft="12.5dp"
+            android:text="변화폭"
+            android:textColor="#fff"
+            android:textSize="11.5sp" />
+
+        <SeekBar
+            android:id="@+id/option3_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/option3_title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:progressDrawable="@drawable/seekbar_drawable"
+            android:thumb="@drawable/thumb_circle" />
+
+        <TextView
+            android:id="@+id/option3_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/option3_seekbar"
+            android:layout_below="@id/option3_seekbar"
+            android:text="좁게"
+            android:textColor="#bfbfbf" />
+
+        <TextView
+            android:id="@+id/option3_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/option3_seekbar"
+            android:layout_below="@id/option3_seekbar"
+            android:text="넓게"
+            android:textColor="#bfbfbf" />
+
+        <TextView
+            android:id="@+id/option3_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/option3_seekbar"
+            android:layout_alignRight="@id/option3_seekbar"
+            android:background="#ffa03b"
+            android:gravity="center_vertical"
+            android:text="(측정값)"
+            android:textColor="#fff"
+            android:textSize="11.5sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <Button
+	        android:id="@+id/button_confirm"
+	        android:layout_width="0dp"
+	        android:layout_height="50dp"
+	        android:layout_weight="1"
+	        android:background="#ffb64d"
+	        android:text="@string/check"
+	        android:textColor="#fff"
+	        android:textSize="20sp" />
+	    <Button
+	        android:id="@+id/button_delete"
+	        android:layout_width="0dp"
+	        android:layout_height="50dp"
+	        android:layout_weight="1"
+	        android:background="#ffb64d"
+	        android:text="@string/delete"
+	        android:textColor="#fff"
+	        android:textSize="20sp" />
+	</LinearLayout>
+    
+
+</LinearLayout>
